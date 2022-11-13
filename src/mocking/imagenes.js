@@ -8,5 +8,5 @@ let imagenes = [
     {nombre :'Glaciar Grey',cuerpo:'El glaciar Grey es un glaciar localizado en Chile, en la parte occidental del parque nacional Torres del Paine, que forma parte de los Campos de Hielo Sur. Es una masa de hielo de 6 kilómetros de ancho y más de 30 metros de altura dividido en dos frentes.', imagen: glaciar, path:'./glaciar_grey.jpeg',slide:'Third slide'}
 ]
 
-export default imagenes
+export default imagenes;
 
