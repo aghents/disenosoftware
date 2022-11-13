@@ -5,6 +5,7 @@ import Tarjeta from '../components/card';
 import News from '../components/news';
 import UncontrolledExample from '../components/publicidad';
 import imagenes from '../mocking/imagenes';
+import Testimonial from '../Testimonial/Testimonial';
 
 class Home extends React.Component {
   render(){
@@ -25,6 +26,15 @@ class Home extends React.Component {
         <br></br> 
         <div className='container p-5 my-5'>
             <UncontrolledExample></UncontrolledExample>
+        </div>
+        
+
+        <br></br>
+        <div>
+          <header className = "App-header">
+          <h1>Testimonios</h1>
+          <Testimonial />
+          </header>
         </div>
 
 
