@@ -13,7 +13,7 @@ function lugares() {
             {
               imagenes.map(obj=>{
                 return(
-                  <div className='col'>
+                  <div className='col-md-4'>
                     <center><Perfil Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Perfil></center>
                   </div>
                 );
