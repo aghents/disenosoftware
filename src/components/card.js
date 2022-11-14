@@ -1,6 +1,8 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import Formulario from "../components/form";
+import { Link } from 'react-router-dom';
 
 
 class Perfil extends React.Component {
@@ -18,7 +20,7 @@ class Perfil extends React.Component {
             </Card.Body>
           </Card>
       </div>
-      );
+    );
   }
 }
 
