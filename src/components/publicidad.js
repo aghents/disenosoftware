@@ -1,12 +1,12 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import imagenes from '../mocking/imagenes';
+import imagenes from './mocking/imagenes';
 import item from './publicidad.css';
 
 class UncontrolledExample extends React.Component {
   render(){
     return (
-      <div className='item'>
+      <div className='container' style={{marginBottom:20,marginTop:20}}>
         <Carousel>
           {
             imagenes.map(obj=>{
@@ -18,9 +18,9 @@ class UncontrolledExample extends React.Component {
                       alt={obj.slide}
                     />
                   </div>
-                  <Carousel.Caption>
-                    <h3>{obj.nombre}</h3>
-                    <p>{obj.cuerpo}</p>
+                  <Carousel.Caption >
+                    <h3><span style={{color:'white',background:'blue' }}>{obj.nombre}</span></h3>
+                    <p><span style={{color:'white',background:'blue' }}>{obj.cuerpo}</span></p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 );
