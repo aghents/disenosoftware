@@ -10,7 +10,7 @@ class Perfil extends React.Component {
     return (
       <div>
         <br></br>
-          <Card style={{ color:'blue' }}>
+          <Card style={{ color:'black' }}>
             <Card.Img class='img-fluid' variant="top" src={this.props.Imagen} />
             <Card.Body>
               <Card.Title><center>{this.props.Name}</center></Card.Title>

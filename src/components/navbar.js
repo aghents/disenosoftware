@@ -15,9 +15,11 @@ class NavBar extends React.Component {
             <Navbar.Brand href="#home">{this.props.Name}</Navbar.Brand>
             <Nav className="me-auto">
               <Nav.Link href="/home">{this.props.First}</Nav.Link>
-              <Nav.Link href="#">{this.props.Second}</Nav.Link>
+              <Nav.Link href="/Lugares">{this.props.Second}</Nav.Link>
               <Nav.Link href="/about">{this.props.Third}</Nav.Link>
-              <Nav.Link href="#">{this.props.Fourths}</Nav.Link>
+              <Nav.Link href="/Tipo_de_Viajes">{this.props.Fourth}</Nav.Link>
+              <Nav.Link href="/Reservar">{this.props.Fifth}</Nav.Link>
+              
             </Nav>
           </Container>
         </Navbar>
