@@ -1,9 +1,9 @@
-import treking from './treking.png';
+import treking from './trekking.jpg';
 import fds from './fds.jpg';
-import lancha from './lancha.jpeg';
-import cabalgata from './cabalgata.jpeg';
-import pingüinos from './pingüinos.jpeg';
-import narvales from './narvales.jpeg';
+import lancha from './lancha.jpg';
+import cabalgata from './cabalgata.jpg';
+import pingüinos from './pingüinos.jpg';
+import narvales from './narvales.jpg';
 
 let tipo_viaje_imagenes = [
     {nombre :'Trekking',cuerpo:'Actividad de Trekking para diferentes lugares como la mística Cueva del Milodón, las Torres del Paine, entre otros lugares que no querrás perderte.', imagen: treking,path:'./treking.png',slide:'First slide'},

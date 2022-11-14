@@ -1,6 +1,6 @@
 import cueva_del_milodon from './cueva_del_milodon.png';
 import lago_pehoe from './lago_pehoe.jpg';
-import glaciar from './glaciar_grey.jpeg';
+import glaciar from './glaciar_grey.jpg';
 
 let imagenes = [
     {nombre :'Cueva del milodon',cuerpo:'El monumento natural Cueva del Milodón es un monumento natural conformado por tres cuevas en la Zona Austral de Chile, donde fueron hallados restos de milodones, mamíferos herbívoros de grandes dimensiones que se extinguieron, probablemente, a fines del Pleistoceno', imagen: cueva_del_milodon,path:'./cueva_del_milodon.png',slide:'First slide'},
