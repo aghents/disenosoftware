@@ -2,19 +2,19 @@ import React from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-class Tarjeta extends React.Component {
+
+class Perfil extends React.Component {
   render(){
     return (
       <div>
         <br></br>
-          <Card style={{ width: '18rem' }}>
-            <Card.Img variant="top" src={this.props.Imagen}/>
+          <Card style={{ color:'blue' }}>
+            <Card.Img class='img-fluid' variant="top" src={this.props.Imagen} />
             <Card.Body>
-              <Card.Title>{this.props.Name}</Card.Title>
+              <Card.Title><center>{this.props.Name}</center></Card.Title>
               <Card.Text>
-                {this.props.Corp}
+                <center>{this.props.Corp}</center>
               </Card.Text>
-              <Button variant="primary">Reservar</Button>
             </Card.Body>
           </Card>
       </div>
@@ -22,4 +22,4 @@ class Tarjeta extends React.Component {
   }
 }
 
-export default Tarjeta;
+export default Perfil;

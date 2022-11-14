@@ -3,12 +3,12 @@ import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from 'cdbreact';
 
 export default function Footer() {
     return (
-        <CDBFooter color="dark" className="shadow">
+        <CDBFooter className="shadow">
             <CDBBox display="flex" flex="column" className="mx-auto py-5" style={{ width: '90%' }}>
                 <CDBBox display="flex" justifyContent="between" className="flex-wrap">
                     <CDBBox>
                         <a href="/" className="d-flex align-items-center p-0 text-dark">
-                            <span className="ml-3 h5 font-weight-bold">Empresa</span>
+                            <span className="ml-3 h5 font-weight-bold">Uruchkech</span>
                         </a>
                         <p className="my-3" style={{ width: '250px' }}>
                             Somos una empresa de turismo dedicada a entregarte una experiencia no un viaje
@@ -54,7 +54,7 @@ export default function Footer() {
                         </CDBBox>
                     </CDBBox>
                 </CDBBox>
-                <small className="text-center mt-5">&copy; empresa, 2022. All rights reserved.</small>
+                <small className="text-center mt-5">&copy; Uruchkech, 2022. All rights reserved.</small>
             </CDBBox>
         </CDBFooter>
     );

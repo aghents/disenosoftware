@@ -24,3 +24,10 @@
   .card-img-top:hover {
     transform: scale(1.8);
   }
+
+  
+.img {
+  display: block;
+  max-width: 80%;
+  height: auto;
+}

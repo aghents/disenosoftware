@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import imagenes from '../mocking/imagenes';
+import imagenes from './mocking/imagenes';
 import item from './publicidad.css';
 
 class UncontrolledExample extends React.Component {

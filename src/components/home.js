@@ -1,10 +1,10 @@
 import React from 'react';
 
 import Comments from "../comments/Comments";
-import Tarjeta from '../components/card';
+import Tarjeta from './card_button';
 import News from '../components/news';
 import UncontrolledExample from '../components/publicidad';
-import imagenes from '../mocking/imagenes';
+import imagenes from './mocking/imagenes';
 
 class Home extends React.Component {
   render(){
@@ -15,7 +15,7 @@ class Home extends React.Component {
                         imagenes.map(obj=>{
                           return(
                             <div className='col'>
-                            <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
+                              <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
                             </div>
                           );
                         })
@@ -23,9 +23,10 @@ class Home extends React.Component {
         </div>
 
         <br></br> 
-        <div className='container p-5 my-5'>
-            <UncontrolledExample></UncontrolledExample>
+        <div className='container'>
+          <UncontrolledExample></UncontrolledExample>
         </div>
+        <br></br>
 
 
         <div className='container'>
