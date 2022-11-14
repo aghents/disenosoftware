@@ -5,7 +5,7 @@ import Tarjeta from './card_button';
 import News from '../components/news';
 import UncontrolledExample from '../components/publicidad';
 
-import imagenes from '../mocking/imagenes';
+import imagenes from './mocking/imagenes';
 import Testimonial from '../Testimonial/Testimonial';
 
 
