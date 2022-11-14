@@ -11,15 +11,15 @@ class Home extends React.Component {
     return (
         <>
         <div className='row'>
-                      {
-                        imagenes.map(obj=>{
-                          return(
-                            <div className='col'>
-                              <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
-                            </div>
-                          );
-                        })
-                      }
+          {
+            imagenes.map(obj=>{
+              return(
+                <div className='col'>
+                  <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
+                </div>
+              );
+            })
+          }
         </div>
 
         <br></br> 

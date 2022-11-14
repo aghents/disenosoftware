@@ -16,7 +16,7 @@ class App extends React.Component {
                 <div className='content'>               
                   <div className='container-fluid'>
                     <Switch>
-                      <Route exact path="/">
+                      <Route exact path="/home">
                         <Home />
                       </Route>
 
