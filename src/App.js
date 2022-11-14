@@ -4,6 +4,7 @@ import Home from './components/home';
 import Footer from './components/footer';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import AboutUs from './components/about';
+import ContactForm from './components/contact_form';
 // Routes es igual a Switch component en los demás tutoriales
 
 class App extends React.Component {
@@ -27,6 +28,7 @@ class App extends React.Component {
                     </Switch>
                   </div>
                 </div>
+                <ContactForm></ContactForm>
                 
                 <Footer />
         
