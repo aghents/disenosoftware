@@ -43,19 +43,19 @@ class App extends React.Component {
                         <Tipo_viaje />
                       </Route>
 
+                      <Route path = "/Tipo_de_Viajes">
+                        <Tipo_viaje />
+                      </Route>
+
                     </Switch>
                   </div>
                 </div>
                 <ContactForm></ContactForm>
                 
                 <Footer />
-        
               </div>
-            </div>
-
-          </div>
-        </Router>
-
+            </Router>
+          
       </>
 
     );
