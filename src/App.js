@@ -35,6 +35,7 @@ class App extends React.Component {
                       <Route path="/about">
                         <Nosotros />
                       </Route>
+
                       <Route path='/form'>
                         <Formulario />
                       </Route>
@@ -43,9 +44,6 @@ class App extends React.Component {
                         <Tipo_viaje />
                       </Route>
 
-                      <Route path = "/Tipo_de_Viajes">
-                        <Tipo_viaje />
-                      </Route>
 
                     </Switch>
                   </div>
