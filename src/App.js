@@ -16,7 +16,7 @@ class App extends React.Component {
         <>
             <Router>
               <div className='App'>
-                <NavBar Name='Uruchkech' First='Home' Second='Lugares' Third='Nosotros' Fourth='Tipo de Viaje'/>
+                <NavBar Name='Uruchkech' First='Home' Second='Lugares' Third='Nosotros' Fourth='Tipo de Viaje' Fifth ='Reservar'/>
                 <div className='content'>               
                   <div className='container-fluid'>
                     <Switch>

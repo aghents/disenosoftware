@@ -1,5 +1,5 @@
 import React from 'react';
-import Perfiles from './card';
+import Tarjeta from './card_button';
 import tipo_viaje_imagenes from './mocking/tipo_viaje_imagenes';
 
 
@@ -12,7 +12,7 @@ function tipo_viaje() {
               tipo_viaje_imagenes.map(obj=>{
                 return(
                   <div className='col-md-4'>
-                    <center><Perfiles Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Perfiles></center>
+                    <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
                   </div>
                 );
               })

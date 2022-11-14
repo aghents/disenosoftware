@@ -18,7 +18,7 @@ class NavBar extends React.Component {
               <Nav.Link href="/Lugares">{this.props.Second}</Nav.Link>
               <Nav.Link href="/about">{this.props.Third}</Nav.Link>
               <Nav.Link href="/Tipo_de_Viajes">{this.props.Fourth}</Nav.Link>
-              <Nav.Link href="/#">{this.props.Fifth}</Nav.Link>
+              <Nav.Link href="/Reservar">{this.props.Fifth}</Nav.Link>
               
             </Nav>
           </Container>

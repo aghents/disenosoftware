@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Perfil from './card';
+import Tarjeta from './card_button';
 
 import imagenes from './mocking/imagenes';
 
@@ -14,7 +14,7 @@ function lugares() {
               imagenes.map(obj=>{
                 return(
                   <div className='col-md-4'>
-                    <center><Perfil Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Perfil></center>
+                    <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
                   </div>
                 );
               })
