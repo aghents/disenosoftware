@@ -27,6 +27,14 @@ class App extends React.Component {
                         <Nosotros />
                       </Route>
 
+                      <Route path = "/Tipo_de_Viaje">
+                        <tipo_viaje />
+                      </Route>
+
+                      <Route path = "/lugares">
+                        <lugares />
+                      </Route>
+
                     </Switch>
                   </div>
                 </div>
