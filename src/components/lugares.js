@@ -10,6 +10,7 @@ function lugares() {
     return (
         <div className = "container p-5 my-5 border">
           <div className='row'>
+            <br></br>
             {
               imagenes.map(obj=>{
                 return(

@@ -19,7 +19,7 @@ function NavBar() {
           </Nav>
           <Nav>
             <Nav.Link href="/form">
-              <Button variant='outline-success'>Reservar</Button>
+              <Button variant='outline-success' bg='dark'>Reservar</Button>
             </Nav.Link>
             
           </Nav>

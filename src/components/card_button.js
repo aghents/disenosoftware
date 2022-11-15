@@ -7,14 +7,14 @@ class Tarjeta extends React.Component {
     return (
       <div>
         <br></br>
-          <Card style={{ }}>
+          <Card style={{textAlign:'justify'}}>
             <Card.Img variant="top" src={this.props.Imagen}/>
             <Card.Body>
               <Card.Title>{this.props.Name}</Card.Title>
               <Card.Text>
                 {this.props.Corp}
               </Card.Text>
-              <Button variant="primary">Reservar</Button>
+              <center><Button variant="outline-success" href='/form'>Reservar</Button></center>
             </Card.Body>
           </Card>
       </div>

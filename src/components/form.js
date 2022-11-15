@@ -21,30 +21,38 @@ function Formulario() {
     return (
         <>
             <br></br>
-            <form>
-                <label>Nombre y Apellido:
-                    <input type="text" />
-                </label>
-                <label>Rut:
-                    <input type="text" placeholder="11111111-1" />
-                </label>
-                <label>Tour:
-                    <select>
-                        {options.map((option) => (
-                            <option value={option.value}>{option.label}</option>
-                        ))}
-                    </select>
-                </label>
-                <label>Fecha:
-                    <DatePicker onChange={onChange} value={value} />
-                </label>
-                <label>E-mail:
-                    <input type="email" />
-                </label>
-                <label>Teléfono:
-                    <input type="text" />
-                </label>
-            </form>
+            <div className="container-fluid">
+                <form style={{display: "flex", flexDirection: "column", alignItems: "center"}}>
+                    <br></br>
+                    <label>Nombre y Apellido:
+                        <input type="text" />
+                    </label>
+                    <br></br>
+                    <label>Rut:
+                        <input type="text" placeholder="11111111-1" />
+                    </label>
+                    <br></br>
+                    <label>Tour:
+                        <select>
+                            {options.map((option) => (
+                                <option value={option.value}>{option.label}</option>
+                            ))}
+                        </select>
+                    </label>
+                    <br></br>
+                    <label>Fecha:
+                        <DatePicker onChange={onChange} value={value} />
+                    </label>
+                    <br></br>
+                    <label>E-mail:
+                        <input type="email" />
+                    </label>
+                    <br></br>
+                    <label>Teléfono:
+                        <input type="text" />
+                    </label>
+                </form>
+            </div>
         </>
     );
 }

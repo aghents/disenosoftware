@@ -2,6 +2,7 @@ import { useForm } from 'react-hook-form';
 import emailjs from 'emailjs-com';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.min.css';
+import Button from 'react-bootstrap/Button';
 
 
 
@@ -63,6 +64,7 @@ const ContactForm = () => {
         <div className='row'>
           <div className='col-12 text-center'>
             <div className='contactForm'>
+            <br></br>
             <h3>Si tienes alguna pregunta no dudes en escribirnos</h3>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
@@ -135,9 +137,10 @@ const ContactForm = () => {
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
-                <button className='submit-btn' type='submit'>
+                <br></br>
+                <Button className='submit-btn' variant='outline-success' type='submit'>
                   Submit
-                </button>
+                </Button>
               </form>
             </div>
             <ToastContainer />

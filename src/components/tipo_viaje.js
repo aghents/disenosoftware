@@ -9,6 +9,7 @@ function tipo_viaje() {
         <div className='container-fluid'>
           <div className="container p-5 my-5 border">
             <div className='row'>
+              <br></br>
               {
                 tipo_viaje_imagenes.map(obj=>{
                   return(
