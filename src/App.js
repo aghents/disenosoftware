@@ -40,7 +40,7 @@ class App extends React.Component {
                         <Formulario />
                       </Route>
 
-                      <Route path = "/Tipo_de_Viajes">
+                      <Route path = "/tipo_de_viajes">
                         <Tipo_viaje />
                       </Route>
 

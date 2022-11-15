@@ -1,32 +1,32 @@
-import React from 'react';
-
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Button from 'react-bootstrap/Button';
 
-import {Link} from "react-router-dom";
-
-class NavBar extends React.Component {
-  render(){
-    return (
-      <>
-        <Navbar bg="primary" variant="dark">
-          <Container>
-            <Navbar.Brand href="#home">{this.props.Name}</Navbar.Brand>
-            <Nav className="me-auto">
-              <Nav.Link href="/home">{this.props.First}</Nav.Link>
-              <Nav.Link href="/Lugares">{this.props.Second}</Nav.Link>
-              <Nav.Link href="/about">{this.props.Third}</Nav.Link>
-              <Nav.Link href="/Tipo_de_Viajes">{this.props.Fourth}</Nav.Link>
-              <Nav.Link href="/form">{this.props.Fifth}</Nav.Link>
-              
-            </Nav>
-          </Container>
-        </Navbar>
-        <br />
-      </>
-    );
-  }
+function NavBar() {
+  return (
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container>
+        <Navbar.Brand href="/home">Uruchkech</Navbar.Brand>
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="me-auto">
+            <Nav.Link href="/home">Home</Nav.Link>
+            <Nav.Link href="/about">Nosotros</Nav.Link>
+            <Nav.Link href="/lugares">Lugares</Nav.Link>
+            <Nav.Link href="/tipo_de_viajes">Tipos de Viaje</Nav.Link>
+          </Nav>
+          <Nav>
+            <Nav.Link href="/form">
+              <Button variant='outline-success'>Reservar</Button>
+            </Nav.Link>
+            
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+  );
 }
 
 export default NavBar;

@@ -20,6 +20,7 @@ function Formulario() {
     const [valor, setValue] = useState()
     return (
         <>
+            <br></br>
             <form>
                 <label>Nombre y Apellido:
                     <input type="text" />

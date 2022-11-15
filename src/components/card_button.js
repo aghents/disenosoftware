@@ -7,7 +7,7 @@ class Tarjeta extends React.Component {
     return (
       <div>
         <br></br>
-          <Card style={{ width: '18rem' }}>
+          <Card style={{ }}>
             <Card.Img variant="top" src={this.props.Imagen}/>
             <Card.Body>
               <Card.Title>{this.props.Name}</Card.Title>
