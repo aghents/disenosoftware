@@ -6,8 +6,7 @@ import item from './publicidad.css';
 class UncontrolledExample extends React.Component {
   render(){
     return (
-      <div className='container' style={{marginBottom:20,marginTop:20}}>
-        <Carousel>
+       <Carousel>
           {
             imagenes.map(obj=>{
               return(
@@ -27,7 +26,6 @@ class UncontrolledExample extends React.Component {
               })
           }
         </Carousel>
-      </div>
     );
   }
 }
