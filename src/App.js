@@ -5,7 +5,6 @@ import Footer from './components/footer';
 import Formulario from "./components/form";
 
 
-
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Tipo_viaje from './components/tipo_viaje';
 import Lugar from './components/lugares';
@@ -48,9 +47,11 @@ class App extends React.Component {
                     </Switch>
                   </div>
                 </div>
-                <ContactForm></ContactForm>
-                
+                <div className='container-fluid'>
+                  <ContactForm></ContactForm>
+                </div>
                 <Footer />
+                
               </div>
             </Router>
           

@@ -1,7 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
 import imagenes from './mocking/imagenes';
-import item from './publicidad.css';
 
 class UncontrolledExample extends React.Component {
   render(){
@@ -18,8 +17,8 @@ class UncontrolledExample extends React.Component {
                     />
                   </div>
                   <Carousel.Caption >
-                    <h3><span style={{color:'white',background:'blue' }}>{obj.nombre}</span></h3>
-                    <p><span style={{color:'white',background:'blue' }}>{obj.cuerpo}</span></p>
+                    <center><h3 style={{color:'white',background:'green',fontSize:'2vw' }}>{obj.nombre}</h3></center>
+                    <p style={{color:'white',background:'green',fontSize:'1.5vw'}}>{obj.cuerpo}</p>
                   </Carousel.Caption>
                 </Carousel.Item>
                 );
