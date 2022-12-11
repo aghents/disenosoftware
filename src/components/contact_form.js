@@ -65,7 +65,7 @@ const ContactForm = () => {
           <div className='col-12 text-center'>
             <div className='contactForm'>
             <br></br>
-            <h3>Si tienes alguna pregunta no dudes en escribirnos</h3>
+            <h3 style={{fontSize:'3vw'}}>Si tienes alguna pregunta no dudes en escribirnos</h3>
               <form id='contact-form' onSubmit={handleSubmit(onSubmit)} noValidate>
                 {/* Row 1 of form */}
                 <div className='row formRow'>
@@ -82,6 +82,7 @@ const ContactForm = () => {
                       })}
                       className='form-control formInput'
                       placeholder='Nombre'
+                      style={{fontSize:'1.5vw'}}
                     ></input>
                     {errors.name && <span className='errorMessage'>{errors.name.message}</span>}
                   </div>
@@ -95,6 +96,7 @@ const ContactForm = () => {
                       })}
                       className='form-control formInput'
                       placeholder='Email'
+                      style={{fontSize:'1.5vw'}}
                     ></input>
                     {errors.email && (
                       <span className='errorMessage'>Please enter a valid email address</span>
@@ -116,6 +118,7 @@ const ContactForm = () => {
                       })}
                       className='form-control formInput'
                       placeholder='Asunto'
+                      style={{fontSize:'1.5vw'}}
                     ></input>
                     {errors.subject && (
                       <span className='errorMessage'>{errors.subject.message}</span>
@@ -133,12 +136,13 @@ const ContactForm = () => {
                       })}
                       className='form-control formInput'
                       placeholder='Mensaje'
+                      style={{fontSize:'1.5vw'}}
                     ></textarea>
                     {errors.message && <span className='errorMessage'>Please enter a message</span>}
                   </div>
                 </div>
                 <br></br>
-                <Button className='submit-btn' variant='outline-success' type='submit'>
+                <Button className='submit-btn' variant='outline-success' type='submit' style={{width:'vw',height:'vw',fontSize:'0.9vw'}}>
                   Submit
                 </Button>
               </form>

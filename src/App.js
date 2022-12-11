@@ -17,43 +17,38 @@ class App extends React.Component {
     render(){
       return (
         <>
-            <Router>
-              <div className='App'>
-                <NavBar Name='Uruchkech' First='Home' Second='Lugares' Third='Nosotros' Fourth='Tipo de Viaje' Fifth ='Reservar'/>
-                <div className='content'>               
-                  <div className='container-fluid'>
-                    <Switch>
-                      <Route exact path="/home">
-                        <Home />
-                      </Route>
+          <Router>
+              <NavBar Name='Uruchkech' First='Home' Second='Lugares' Third='Nosotros' Fourth='Tipo de Viaje' Fifth ='Reservar'/>
+              <div className='content'>               
+                  <Switch>
+                    <Route exact path="/home">
+                      <Home />
+                    </Route>
 
-                      <Route path = "/Lugares">
-                        <Lugar />
-                      </Route>
+                    <Route path = "/Lugares">
+                      <Lugar />
+                    </Route>
 
-                      <Route path="/about">
-                        <Nosotros />
-                      </Route>
+                    <Route path="/about">
+                      <Nosotros />
+                    </Route>
 
-                      <Route path='/form'>
-                        <Formulario />
-                      </Route>
+                    <Route path='/form'>
+                      <Formulario />
+                    </Route>
 
-                      <Route path = "/tipo_de_viajes">
-                        <Tipo_viaje />
-                      </Route>
+                    <Route path = "/tipo_de_viajes">
+                      <Tipo_viaje />
+                    </Route>
 
-
-                    </Switch>
-                  </div>
-                </div>
-                <div className='container-fluid'>
-                  <ContactForm></ContactForm>
-                </div>
-                <Footer />
-                
+                  </Switch>
               </div>
-            </Router>
+              <div className='container-fluid'>
+                <ContactForm></ContactForm>
+              </div>
+              <Footer />
+              
+          </Router>
           
       </>
 

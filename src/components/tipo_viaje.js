@@ -13,7 +13,7 @@ function tipo_viaje() {
               {
                 tipo_viaje_imagenes.map(obj=>{
                   return(
-                    <div className='col-md-4'>
+                    <div className='col-4'>
                       <center><Tarjeta Name={obj.nombre} Corp={obj.cuerpo} Imagen={obj.imagen}></Tarjeta></center>
                     </div>
                   );

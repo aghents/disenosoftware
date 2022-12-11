@@ -31,21 +31,7 @@ class Home extends React.Component {
             </div>
           </div>
 
-          <div>
-            <header className = "row App-header">
-            <h1>Testimonios</h1>
-            <Testimonial />
-            </header>
-          </div>
-
-          <div className='row'>
-              <Comments currentUserId="1" />
-          </div>
           
-          <div className='row p-5 my-5 border'>
-            <h4><center>Blog</center></h4>
-            <News></News>
-          </div>
         </div>
 
         
