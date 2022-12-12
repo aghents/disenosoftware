@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter, Route, Routes } from "react-router-dom"
+import { BrowserRouter} from "react-router-dom"
 
 
 
@@ -14,15 +14,34 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min";
 
 
+import { ApolloClient, InMemoryCache, ApolloProvider, gql } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: 'http://localhost:8090/graphql',
+  cache: new InMemoryCache(),
+});
+
+client.query({
+  query: gql`
+    query getReservas {
+      getReservas {
+        id
+        fecha
+        nombre_viaje 
+      }
+    }
+  `
+}).then((result) => console.log(result));
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
 
-  <React.StrictMode>
+  <ApolloProvider client={client}>
     <BrowserRouter>
         <App />
     </BrowserRouter>,
-  </React.StrictMode>,
+  </ApolloProvider>,
   document.getElementById("root")
 );
 

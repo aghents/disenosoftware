@@ -17,8 +17,7 @@ class UncontrolledExample extends React.Component {
                     />
                   </div>
                   <Carousel.Caption >
-                    <center><h3 style={{color:'white',background:'green',fontSize:'2vw' }}>{obj.nombre}</h3></center>
-                    <p style={{color:'white',background:'green',fontSize:'1.5vw'}}>{obj.cuerpo}</p>
+                    <center><h3 style={{color:'white',background:'green'}}>{obj.nombre}</h3></center>
                   </Carousel.Caption>
                 </Carousel.Item>
                 );
