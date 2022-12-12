@@ -7,7 +7,7 @@ function Nosotros() {
   
   return(
     <div className="container p-5 my-5 border">
-      <div className="row">
+      <div className="row" style={{margin:'10px' }}>
         <div className="col">
           <center><h1 >Nosotros</h1></center>
           <p align='center' >Nos dedicamos a entregar crear recurdos. Nuestra misión es que cada persona que viaja con nuestros servicios, cree recuerdos de los lugares que visitó, generando experiencias y momentos que los acompañarán toda su vida.</p>
@@ -15,13 +15,12 @@ function Nosotros() {
             <img
                 className="img-thumbnail rounded"
                 src="https://res.cloudinary.com/dmdluivvr/image/upload/w_1000,ar_16:9,c_fill,g_auto,e_sharpen/v1670802804/Magallanes_mwdxa2.jpg"
-
-                style={{width:'50vw', height:'30vw'}} />
+                />
           </center>
         </div>
         </div>
 
-      <div className="row">
+      <div className="row" style={{margin:'10px' }}>
           <center><h2 >Equipo</h2></center>
         </div>
 
