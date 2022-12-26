@@ -1,7 +1,7 @@
-# Paquete específicos:
-#leído 2.0
+Proyecto final del curso de Diseño de software:
 
-#venja: chao
-
-
-React-route-dom: 5.2.0
+Integrantes:
+Benjamin Rodriguez
+Jose Miguel Rojas
+Hans Barnert 
+Agustin Soto
